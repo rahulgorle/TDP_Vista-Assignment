@@ -1,0 +1,436 @@
+/* Header Navigation */
+.header {
+    background-color: #222;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .header .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header .nav-list li {
+    margin-left: 1rem;
+  }
+  
+  .header .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .header .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .header .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-search input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem 0 0 0.25rem;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .hero-search button {
+    background-color: #ff6384;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-search button:hover {
+    background-color: #ff4560;
+  }
+  
+ /* Features Section */
+.features {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .features .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .features .sub-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-basis: calc(50% - 1rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .feature-card .feature-info {
+    padding: 1rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Discover Section */
+  .discover {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .discover .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .discover .sub-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .highlight-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-basis: calc(50% - 1rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .highlight-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .highlight-card .highlight-info {
+    padding: 1rem;
+  }
+  
+  .highlight-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .highlight-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+/* Collections Section */
+.collections {
+    padding: 4rem 0;
+  }
+  
+  .collections .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .collection-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    width: calc(25% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+  }
+  
+  .collection-card:last-child {
+    margin-right: 0;
+  }
+  
+  .collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .collection-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .collection-card .collection-info {
+    padding: 1rem;
+  }
+  
+  .collection-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .collection-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Paintings Section */
+  .paintings {
+    padding: 4rem 0;
+  }
+  
+  .paintings .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .artwork-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    width: calc(25% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+  }
+  
+  .artwork-card:last-child {
+    margin-right: 0;
+  }
+  
+  .artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artwork-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .artwork-card .artwork-info {
+    padding: 1rem;
+  }
+  
+  .artwork-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artwork-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  
+  /* Artists Section */
+  .artists {
+    padding: 4rem 0;
+  }
+  
+  .artists .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .artists .artist-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    width: calc(25% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+  }
+  
+  .artists .artist-card:last-child {
+    margin-right: 0;
+  }
+  
+  .artists .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artists .artist-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .artists .artist-card .artist-info {
+    padding: 1rem;
+  }
+  
+  .artists .artist-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artists .artist-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Buy Section */
+  .buy {
+    padding: 4rem 0;
+  }
+  
+  .buy .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .buy .artwork-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    width: calc(25% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+  }
+  
+  .buy .artwork-card:last-child {
+    margin-right: 0;
+  }
+  
+  .buy .artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buy .artwork-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .buy .artwork-card .artwork-info {
+    padding: 1rem;
+  }
+  
+  .buy .artwork-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .buy .artwork-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer .footer-text {
+    font-size: 1rem;
+  }
+  
